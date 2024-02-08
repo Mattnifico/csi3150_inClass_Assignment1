@@ -1,99 +1,130 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,700&display=swap");
 
 * {
-  /*reset browser's default styles in the nest 3 lines */
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  /* chosen font family */
-  font-family: "Poppins", "Courier New", "Courier New", Courier, monospace;
-  /* setup color variables for css */
-  --color1: #0f0f0e; /* invoke --> var(--bg-primary) */
-  --color2: #fd4444;
-  --color3: #e0e0cc;
-  --font-primary: #050517;
-  --font-secondary: #868686;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", "Courier New", "Courier New", Courier, monospace;
+    --color1: #0f0f0e;
+    --color2: #fd4444;
+    --color3: #e0e0cc;
+    --font-primary: #050517;
+    --font-secondary: #868686;
 }
 
-body{
+body {
     background: var(--color1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .product-card {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  padding: 0 50px;
-  width: 800px;
-  height: 500px;
-  margin-top: 120px;
-  background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 800px;
+    height: 500px;
+    margin-top: 120px;
+    background: white;
 }
 
 .product-card .left-img-col {
-  width: 50%;
+    width: 50%;
 }
 
 .product-card .left-img-col img {
-  width: 100%;
-  height: 100%;
+    margin-top: 6px;
+    width: 400px;
+    height: 500px;
+    object-fit: cover;
 }
 
 .product-card .right-info-col {
-  width: 50%;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-  padding: 20px;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+    padding: 20px;
 }
 
 .product-card .right-info-col h3 {
-  color: var(--font-primary);
-  font-size: 32px;
+    margin-top: 10px;
+    color: var(--font-primary);
+    font-size: 32px;
 }
 
 .product-card .right-info-col h5 {
-  color: var(--font-secondary);
-  font-size: 18px;
-  margin-top: 15px;
+    color: var(--font-secondary);
+    font-size: 18px;
+    margin-top: 5px;
 }
 
 .product-card .right-info-col p {
-  font-size: 14px;
-  margin-top: 20px;
-  margin-left: 50px;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-left: 50px;
 }
 
 .product-card .right-info-col .available-colors {
-  margin-top: 20px;
-  padding: 20px;
+    margin-top: 5px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .product-card .right-info-col .available-colors span {
-  font-size: 14px;
+    font-size: 14px;
+    margin-left: 20px;
 }
 
 .product-card .right-info-col .available-colors .black-color-container {
-  color: var(--color1);
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--color1);
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.product-card .right-info-col .available-colors .red-color-container {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--color2);
+    margin-right: 25px;
+}
+
+.product-card .right-info-col .available-colors .white-color-container {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--color3);
 }
 
 .product-card .right-info-col .price {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .product-card .right-info-col .price h4 {
-  font-size: 32px;
+    font-size: 32px;
+    margin-right: 80px;
 }
 
 .product-card .right-info-col .price button {
-  width: 150px;
-  height: 40px;
-  border-radius: 10%;
-  border: none;
+    width: 150px;
+    height: 40px;
+    border-radius: 10%;
+    border: none;
+    background: var(--font-primary);
+    color: var(--color3);
 }
